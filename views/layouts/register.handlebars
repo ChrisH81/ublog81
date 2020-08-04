@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Register/sign in</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/register">Sign in/Register</a></li>
+    </ul>
+    {{#if message}}
+        <div class="error">
+          <span style="color: red">{{message}}</span>
+        </div>
+        {{/if}}
+        <h2>Register</h2>
+        <form action="/register" method="post">
+          <div>
+              <label>Username:</label>
+              <input type="text" name="username" />
+          </div>
+          <div>
+              <label>Password:</label>
+              <input type="password" name="password" />
+          </div>
+          <div>
+            <label>Confirm password:</label>
+            <input type="password" name="confirm-password" />
+          </div>
+          <button type="submit">Sign up</button>
+        </form>
+        <br>
+        <br>
+        <h2>log in</h2>
+        <form action="/login" method="post">
+          <div>
+              <label>Username:</label>
+              <input type="text" name="username" />
+          </div>
+          <div>
+              <label>Password:</label>
+              <input type="password" name="password" />
+          </div>
+          <button type="submit">log in</button>
+        </form>
+  </body>
+</html>

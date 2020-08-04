@@ -1,0 +1,7 @@
+{
+  "name": "Simple CMS app",
+  "description": "A minimal ExpressJS server boilerplate using Handlebars view engine.",
+  "repository": "",
+  "logo": "https://image.shutterstock.com/image-vector/face-icon-simple-yellow-260nw-1673803504.jpg",
+  "keywords": ["node", "express", "webserver", "handlebars", "boilerplate", "expressjs", "javascript"]
+}
